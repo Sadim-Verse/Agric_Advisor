@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 import time
 
 from yield_ import get_countries, get_crops, get_min_max, crop_classification
-from huggingface_hub import InferenceApi
+# from huggingface_hub import InferenceApi
 
 # # Load the required files
 # inference = InferenceApi(
