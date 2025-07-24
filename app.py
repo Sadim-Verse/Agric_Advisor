@@ -6,20 +6,13 @@ from sklearn.preprocessing import LabelEncoder
 import time
 
 from yield_ import get_countries, get_crops, get_min_max, crop_classification
-# from huggingface_hub import InferenceApi
-
-# # Load the required files
-# inference = InferenceApi(
-#     repo_id = "Sad1m/agric_advisor",
-#     token= "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"
-# )
 
 model = joblib.load(r"rfc_model_c.joblib")
 le_co = joblib.load(r"country_le")
 le_cr = joblib.load(r"crop_le")
 
 st.set_page_config(
-    page_title="An Agric Advisor",
+    page_title="Agric Advisor",
     layout="wide"
 )
     
@@ -127,18 +120,3 @@ if predict_button:
 
 if predicted_yield != 0:
     crop_classification(crop_name, predicted_yield)
-
-
-
-from huggingface_hub import HfApi
-from huggingface_hub import upload_file
-
-# api = HfApi()
-# api.create_repo(repo_id="agric_advisor", private=True)
-
-# api.upload_folder(
-#     repo_id = "Sad1m/agric_advisor",
-#     folder_path= r"C:\Users\HP\Projects\Python_for_ML\Regression\Agric_advisor",
-#     path_in_repo="",
-#     repo_type= "space"
-# )
