@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import time
 
-yield_data = pd.read_csv(r"C:\Users\HP\Projects\Python_for_ML\Regression\Agric_advisor\new_yield_df.csv")
+yield_data = pd.read_csv(r"new_yield_df.csv")
 
 yield_data
 
