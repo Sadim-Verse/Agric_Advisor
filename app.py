@@ -14,9 +14,9 @@ from huggingface_hub import InferenceApi
 #     token= "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"
 # )
 
-model = joblib.load(r"C:\Users\HP\Projects\Python_for_ML\Regression\Agric_advisor\rfc_model_c.joblib")
-le_co = joblib.load(r"C:\Users\HP\Projects\Python_for_ML\Regression\Agric_advisor\country_le")
-le_cr = joblib.load(r"C:\Users\HP\Projects\Python_for_ML\Regression\Agric_advisor\crop_le")
+model = joblib.load(r"rfc_model_c.joblib")
+le_co = joblib.load(r"country_le")
+le_cr = joblib.load(r"crop_le")
 
 st.set_page_config(
     page_title="An Agric Advisor",
