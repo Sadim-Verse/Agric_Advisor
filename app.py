@@ -80,19 +80,19 @@ st.write(f"You Selected: {crop_name}")
 st.write("--------------------------")
 
 # Enter the numerical values
-avg_rainfall = st.number_input("Average Annual Rainfall: ", 
+avg_rainfall = st.number_input("Average Annual Rainfall(mm): ", 
                                min_value=get_min_max(1, 0, 'rain'), 
                                max_value=get_min_max(0, 1, 'rain'),
                                value=None, placeholder=0.00)
 
 st.write("--")
-pesticide_use = st.number_input("Amount of pesticides used: ", 
+pesticide_use = st.number_input("Amount of pesticides used(tonnes): ", 
                                 min_value=get_min_max(1, 0, 'pest'),
                                 max_value=get_min_max(0, 1, 'pest'),
                                 value=None, placeholder=0.00)
 
 st.write("--")
-avg_temp = st.number_input("Average Weather Temperature: ",
+avg_temp = st.number_input("Average Weather Temperature(deegree C): ",
                            min_value=get_min_max(1, 0, 'temp'),
                            max_value=get_min_max(0, 1, 'temp'),
                            value=None, placeholder=0.00)
